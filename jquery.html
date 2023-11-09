@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's study FRONTEND!</title>
+    <link rel = "stylesheet" href ="design.css">
+    <!--외부 스타일시트 적용-->
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        #search{
+            float: right;
+        }
+
+        span {
+            margin-left: 150px;
+        }
+        #searchInput {
+            width: 200px;
+            height : 20px; /* 검색 입력란의 너비 설정 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href = "index.html"><header>
+        <h1>Let's study FRONTEND !</h1>
+     </header></a>
+
+    <nav>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+    </nav>
+
+
+    <div class="container">
+        <span>
+            페이지 내에서 찾고싶은 내용을 입력하세요 : <input type="text" id="searchInput" placeholder="검색어 입력">
+        </span>
+
+        <br>
+        <br>
+
+        <h2>jQuery 라이브러리</h2>
+        <table>
+            <tr>
+                <th>용어</th>
+                <th>설명</th>
+                <th>예제</th>
+            </tr>
+            <tr>
+                <td>jQuery</td>
+                <td>JavaScript를 기반으로 하는 빠르고 간결한 JavaScript 라이브러리</td>
+                <td><code>&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;</code></td>
+            </tr>
+            <tr>
+                <td>선택자 (Selector)</td>
+                <td>HTML 요소를 선택하는 방법을 정의하는 표현식</td>
+                <td><code>$(선택자).메서드(매개변수,매개변수)</code></td>
+            </tr>
+            <tr>
+                <td>메서드 (Method)</td>
+                <td>jQuery 객체에 적용되는 동작 또는 기능을 정의하는 함수</td>
+                <td><code>$(선택자).hide();</code></td>
+            </tr>
+            <tr>
+                <td>이벤트 (Event)</td>
+                <td>사용자의 동작(클릭, 마우스 오버 등)에 대한 반응을 정의하는 동작</td>
+                <td><code>$(선택자).click(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('버튼이 클릭되었습니다.');<br>});</code></td>
+            </tr>
+            <tr>
+                <td>애니메이션 (Animation)</td>
+                <td>요소의 움직임, 페이드 등을 부드럽게 제어하는 기능</td>
+                <td><code>$(선택자).fadeIn();</code></td>
+            </tr>
+            <tr>
+                <td>AJAX</td>
+                <td>비동기적으로 서버와 데이터를 교환하고 웹 페이지를 업데이트하는 기능</td>
+                <td><code>$.ajax({<br>&nbsp;&nbsp;&nbsp;&nbsp;url: 'data.php',<br>&nbsp;&nbsp;&nbsp;&nbsp;type: 'GET',<br>&nbsp;&nbsp;&nbsp;&nbsp;success: function(response) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('데이터를 성공적으로 가져왔습니다.');<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>});</code></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <br>
+
+        <h2>jQuery 메서드</h2>
+        <table>
+            <tr>
+                <th>카테고리</th>
+                <th>메서드</th>
+                <th>설명</th>
+            </tr>
+            <!-- 속성 조작 메서드 -->
+            <tr>
+                <td rowspan="4">속성 조작 메서드</td>
+                <td>attr()</td>
+                <td>HTML 요소의 속성 값을 가져오거나 설정합니다.</td>
+            </tr>
+            <tr>
+                <td>prop()</td>
+                <td>HTML 요소의 속성 값을 가져오거나 설정합니다.</td>
+            </tr>
+            <tr>
+                <td>val()</td>
+                <td>폼 요소의 값을 가져오거나 설정합니다.</td>
+            </tr>
+            <tr>
+                <td>data()</td>
+                <td>요소에 연결된 데이터를 가져오거나 설정합니다.</td>
+            </tr>
+            <!-- 스타일 조작 메서드 -->
+            <tr>
+                <td rowspan="4">스타일 조작 메서드</td>
+                <td>addClass()</td>
+                <td>HTML 요소에 클래스를 추가합니다.</td>
+            </tr>
+            <tr>
+                <td>removeClass()</td>
+                <td>HTML 요소에서 클래스를 제거합니다.</td>
+            </tr>
+            <tr>
+                <td>toggleClass()</td>
+                <td>HTML 요소에 클래스를 추가하거나 제거합니다.</td>
+            </tr>
+            <tr>
+                <td>css()</td>
+                <td>HTML 요소의 CSS 속성 값을 가져오거나 설정합니다.</td>
+            </tr>
+            <!-- 글자 조작 메서드 -->
+            <tr>
+                <td rowspan="4">글자 조작 메서드</td>
+                <td>text()</td>
+                <td>HTML 요소의 텍스트 콘텐츠를 가져오거나 설정합니다.</td>
+            </tr>
+            <tr>
+                <td>html()</td>
+                <td>HTML 요소의 내부 HTML 콘텐츠를 가져오거나 설정합니다.</td>
+            </tr>
+            <tr>
+                <td>append()</td>
+                <td>HTML 요소의 내부에 콘텐츠를 추가합니다.</td>
+            </tr>
+            <tr>
+                <td>prepend()</td>
+                <td>HTML 요소의 내부의 시작 부분에 콘텐츠를 추가합니다.</td>
+            </tr>
+            <!-- 이벤트 연결 및 제거 메서드 -->
+            <tr>
+                <td rowspan="3">이벤트 연결 및 제거 메서드</td>
+                <td>on()</td>
+                <td>이벤트 핸들러를 연결합니다.</td>
+            </tr>
+            <tr>
+                <td>off()</td>
+                <td>이벤트 핸들러를 제거합니다.</td>
+            </tr>
+            <tr>
+                <td>trigger()</td>
+                <td>이벤트를 트리거하여 실행합니다.</td>
+            </tr>
+            <!-- 시각 효과 메서드 -->
+            <tr>
+                <td rowspan="3">시각 효과 메서드</td>
+                <td>show()</td>
+                <td>HTML 요소를 보이도록 표시합니다.</td>
+            </tr>
+            <tr>
+                <td>hide()</td>
+                <td>HTML 요소를 숨깁니다.</td>
+            </tr>
+            <tr>
+                <td>toggle()</td>
+                <td>HTML 요소의 가시성 상태를 전환합니다.</td>
+            </tr>
+            <!-- 애니메이션 메서드 -->
+            <tr>
+                <td rowspan="3">애니메이션 메서드</td>
+                <td>fadeIn()</td>
+                <td>HTML 요소를 서서히 나타나게 합니다.</td>
+            </tr>
+            <tr>
+                <td>fadeOut()</td>
+                <td>HTML 요소를 서서히 사라지게 합니다.</td>
+            </tr>
+            <tr>
+                <td>animate()</td>
+                <td>HTML 요소에 대한 사용자 정의 애니메이션을 제어합니다.</td>
+            </tr>
+        </table>
+
+
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // jQuery를 사용하여 네비게이션 링크를 클릭했을 때 해당 페이지로 스크롤 이동
+        $(document).ready(function() {
+            $('nav a').click(function() {
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+            });
+        }), 
+        $(document).ready(function () {
+            // 검색 기능 추가
+            $('#searchInput').keyup(function () {
+                var searchKeyword = $(this).val().toLowerCase(); // 검색어 입력값을 소문자로 변환
+
+                if (searchKeyword === '') {
+                    $('table td').removeClass('highlight'); // 검색어가 비어있으면 모든 셀의 하이라이트 제거
+                    return;
+                }
+
+                // 테이블의 각 셀을 검색하여 일치하는 텍스트를 강조 표시
+                $('table td').each(function () {
+                    var cellText = $(this).text().toLowerCase();
+
+                    if (cellText.indexOf(searchKeyword) !== -1) {
+                        $(this).addClass('highlight');
+                    } else {
+                        $(this).removeClass('highlight');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Let's study FRONTEND !</title>
+    <link rel = "stylesheet" href ="design.css">
+    <!--외부 스타일시트 적용-->
+</head>
+<body>
+
+    <header><a href = "#" onclick="index.html">
+        <h1 style="z-index: 5;">Let's study FRONTEND !    
+            <div class="water-container">
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+            <div class="water-drop"></div>
+          </div>
+        </h1>
+     </a></header>
+
+    <nav>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+    </nav>
+
+
+    <div class="container">
+        <h2>Let's study Frontend!</h2>
+        <p>프론트엔드 공부를 돕는 웹사이트입니다.</p>
+        <p>이 웹사이트는 한빛아카데미의 <b>HTML 웹 프로그래밍 입문(3판)</b>을 바탕으로 제작되었습니다.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies magna non mi pharetra, id semper dolor hendrerit. Nam interdum risus et sem vehicula, nec congue velit lobortis. Duis ut scelerisque tellus. Vivamus vestibulum nulla quis est tristique, vitae scelerisque nisi lacinia. Nullam aliquet, mauris et tempor dignissim, neque dui auctor turpis, a tempus mauris neque nec sem. Quisque euismod tempor massa, a egestas ligula vulputate ut. Nulla posuere finibus luctus. Curabitur a lacinia tortor. Vestibulum at mollis arcu, in hendrerit turpis.</p>
+
+    </div>
+    <div class="whale">
+
+        <img src="whale.png" alt="고래 이미지">
+    </div>
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // jQuery를 사용하여 네비게이션 링크를 클릭했을 때 해당 페이지로 스크롤 이동
+        $(document).ready(function() {
+            $('nav a').click(function() {
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>

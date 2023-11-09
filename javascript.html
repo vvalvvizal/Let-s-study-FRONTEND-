@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's study FRONTEND!</title>
+    <link rel = "stylesheet" href ="design.css">
+    <!--외부 스타일시트 적용-->
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        #search{
+            float: right;
+        }
+
+        span {
+            margin-left: 150px;
+        }
+        #searchInput {
+            width: 200px;
+            height : 20px; /* 검색 입력란의 너비 설정 */
+        }
+    </style>
+</head>
+
+<body>
+    <a href = "index.html"><header>
+        <h1>Let's study FRONTEND !</h1>
+     </header></a>
+
+    <nav>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+    </nav>
+
+    <div class="container">
+        <!--검색기능-->
+        <span>
+            페이지 내에서 찾고싶은 내용을 입력하세요 : <input type="text" id="searchInput" placeholder="검색어 입력">
+        </span>
+        <br>
+        <br>
+
+        <h2>자바스크립트 문법</h2>
+        <table>
+            <tr>
+                <th>키워드</th>
+                <th>설명</th>
+                <th>예제</th>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td>변수를 선언하는 키워드</td>
+                <td><code>var x = 5;</code></td>
+            </tr>
+            </table>
+
+            <br>
+            <h2>자료형</h2>
+            <table>
+                <tr>
+                    <th>자료형</th>
+                    <th>설명</th>
+                    <th>예제</th>
+                </tr>
+                <tr>
+                    <td>숫자</td>
+                    <td>숫자 데이터를 나타내는 자료형 <br>정수와 실수 구분하지 않음</td>
+                    <td><code>var x = 5;</code></td>
+                </tr>
+                <tr>
+                    <td>문자열</td>
+                    <td>문자의 집합</td>
+                    <td><code>var name = 'John';</code></td>
+                </tr>
+                <tr>
+                    <td>불(bool)</td>
+                    <td>참(True) 또는 거짓(False)을 나타내는 자료형</td>
+                    <td><code>var isTrue = true;</code></td>
+                </tr>
+            </table>
+
+            <br>
+            <h2>주석</h2>
+            <table>
+            <tr>
+                <th>키워드</th>
+                <th>설명</th>
+                <th>예제</th>
+            </tr>
+                    <!-- 주석 -->
+             <tr>
+            <td>//, /* */</td>
+            <td>주석을 작성하는 방법</td>
+            <td><code>// 한 줄 주석<br>/*<br>&nbsp;&nbsp;&nbsp;&nbsp;여러 줄<br>&nbsp;&nbsp;&nbsp;&nbsp;주석<br>*/</code></td>
+            </tr>
+        </table>
+            <br>
+            <h2>조건문</h2>
+
+            <table>
+                <tr>
+                    <th>키워드</th>
+                    <th>설명</th>
+                    <th>예제</th>
+                </tr>
+            <tr>
+                <td>if</td>
+                <td>조건문을 나타내는 키워드</td>
+                <td><code>if (x > 10) {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('x is greater than 10');<br>} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('x is less than or equal to 10');<br>}</code></td>
+            </tr>
+            <!-- if-else문 -->
+            <tr>
+                <td>if-else</td>
+                <td>조건에 따라 다른 동작을 수행하는 조건문</td>
+                <td><code>var age = 18;<br>if (age >= 18) {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('성인입니다.');<br>} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('미성년자입니다.');<br>}</code></td>
+            </tr>
+            <tr>
+                <td>switch</td>
+                <td>다중 조건문을 나타내는 키워드</td>
+                <td><code>var day = 'Monday';<br>switch (day) {<br>&nbsp;&nbsp;&nbsp;&nbsp;case 'Monday':<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('Today is Monday.');<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;case 'Tuesday':<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('Today is Tuesday.');<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('Today is not Monday or Tuesday.');<br>}</code></td>
+            </tr>
+
+            </table>
+            <br>
+
+            <h2>반복문</h2>
+            <table>
+            <tr>
+                <th>키워드</th>
+                <th>설명</th>
+                <th>예제</th>
+            </tr>
+            <!-- 배열 -->
+            <tr>
+                <td>배열</td>
+                <td>여러 개의 요소를 저장하는 자료형</td>
+                <td><code>var array = [273, 'banana', true, function(){},{}];<br>alert(array[0]); // '273'</code></td>
+            </tr>
+            <tr>
+                <td>for</td>
+                <td>반복문을 나타내는 키워드</td>
+                <td><code>for (var i = 0; i < 5; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert(i);<br>}</code></td>
+            </tr>
+
+            <!-- while문 -->
+            <tr>
+                <td>while</td>
+                <td>조건이 참인 동안 반복하는 반복문</td>
+                <td><code>var i = 0;<br>while (i < 5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;i++;<br>}</code></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>함수</h2>
+        <table>
+        <tr>
+            <th>키워드</th>
+            <th>설명</th>
+            <th>예제</th>
+        </tr>
+        <tr>
+            <td rowspan="2">function</td>
+            <td>익명 함수 선언</td>
+            <td><code>var 함수 = function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('함수_01');<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('함수_02');};<br><br>alert(typeof(함수)+' : ' + 함수);<br></code></td>
+        </tr>
+
+        <tr>
+            <td>선언적 함수 선언</td>
+            <td><code>function 함수() {<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('함수_01');<br>&nbsp;&nbsp;&nbsp;&nbsp;alert('함수_02');};<br><br>alert(typeof(함수)+' : ' + 함수);<br></code></td>
+        </tr>
+        </table>    
+
+        <br>
+        <h2>객체</h2>
+        <table>
+        <tr>
+            <th>키워드</th>
+            <th>설명</th>
+            <th>예제</th>
+        </tr>
+        <!-- 객체 -->
+        <tr>
+            <td>객체</td>
+            <td>속성(property)과 값을 가지는 자료구조</td>
+            <td><code>var person = {<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'John',<br>&nbsp;&nbsp;&nbsp;&nbsp;age: 30,<br>&nbsp;&nbsp;&nbsp;&nbsp;city: 'New York'<br>};<br>alert(person.name); // 'John'</code></td>
+        </tr>
+        </table>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // jQuery를 사용하여 네비게이션 링크를 클릭했을 때 해당 페이지로 스크롤 이동
+        $(document).ready(function() {
+            $('nav a').click(function() {
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+            });
+        }), 
+        $(document).ready(function () {
+            // 검색 기능 추가
+            $('#searchInput').keyup(function () {
+                var searchKeyword = $(this).val().toLowerCase(); // 검색어 입력값을 소문자로 변환
+
+                if (searchKeyword === '') {
+                    $('table td').removeClass('highlight'); // 검색어가 비어있으면 모든 셀의 하이라이트 제거
+                    return;
+                }
+
+                // 테이블의 각 셀을 검색하여 일치하는 텍스트를 강조 표시
+                $('table td').each(function () {
+                    var cellText = $(this).text().toLowerCase();
+
+                    if (cellText.indexOf(searchKeyword) !== -1) {
+                        $(this).addClass('highlight');
+                    } else {
+                        $(this).removeClass('highlight');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
